@@ -498,28 +498,47 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 500px;
 }
 
 .about-decorative-shape {
     position: absolute;
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--green-pale) 0%, var(--brown-pale) 100%);
-    opacity: 0.6;
+    opacity: 0.4;
     z-index: 0;
 }
 
-.about-map {
+.about-portrait {
     position: relative;
-    z-index: 1;
-    max-width: 320px;
-    opacity: 0.7;
-    transition: opacity 0.4s var(--ease-smooth);
+    z-index: 2;
+    width: 100%;
+    max-width: 400px;
+    max-height: 500px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
+    transition: transform 0.4s var(--ease-smooth);
 }
 
-.about-visual:hover .about-map {
-    opacity: 1;
+.about-portrait:hover {
+    transform: translateY(-10px);
+}
+
+.about-map-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    max-width: 500px;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.about-visual:hover .about-map-overlay {
+    opacity: 0.25;
 }
 
 .about-text p {
@@ -541,21 +560,43 @@ ul {
     background: var(--off-white);
 }
 
+.expertise-header {
+    margin-bottom: 60px;
+}
+
+.expertise-intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.expertise-portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    object-fit: cover;
+    filter: sepia(0.2) contrast(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
 .expertise-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     margin-top: 48px;
 }
 
 .expertise-card {
     background: var(--white);
     border-radius: 16px;
-    padding: 48px 40px;
+    padding: 40px 32px;
     border: 1px solid var(--border-light);
     transition: all 0.4s var(--ease-smooth);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
 }
 
 .expertise-card::before {
@@ -714,6 +755,21 @@ ul {
     grid-template-columns: 1fr 1.2fr;
     gap: 80px;
     margin-top: 48px;
+    align-items: start;
+}
+
+.contact-portrait-wrap {
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.contact-portrait {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact-details {
@@ -945,6 +1001,17 @@ ul {
 
     .section-title {
         font-size: clamp(1.75rem, 5vw, 2.5rem);
+    }
+
+    .expertise-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .expertise-portrait {
+        width: 100px;
+        height: 100px;
     }
 }
 
