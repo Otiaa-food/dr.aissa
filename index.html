@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Aissa – Santé · Diplomatie · Politique</title>
+    <meta name="description"
+        content="Prof. Dr. Aissa Halidou – Experte internationale en politique, diplomatie, décolonisation et santé publique. Health, Policy & Consulting – International Expertise." />
+    <meta name="keywords"
+        content="Dr. Aissa, consulting, politics, diplomacy, decolonization, public health, international expertise" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav id="main-nav" class="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <img src="images/logo.png" alt="Dr. Aissa Logo" />
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" data-fr="À propos" data-de="Über mich" data-en="About">À propos</a></li>
+                <li><a href="#expertise" data-fr="Expertise" data-de="Expertise" data-en="Expertise">Expertise</a></li>
+                <li><a href="#services" data-fr="Services" data-de="Leistungen" data-en="Services">Services</a></li>
+                <li><a href="#contact" data-fr="Contact" data-de="Kontakt" data-en="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="lang-switch" id="lang-switch">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="de">DE</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-decoration">
+            <img src="images/africa-bg.png" alt="" class="hero-africa-map" aria-hidden="true" />
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo-wrap">
+                <img src="images/logo.png" alt="Dr. Aissa – Logo" class="hero-logo" />
+            </div>
+            <p class="hero-tagline">Santé – Diplomatie – Politique</p>
+            <h1 class="hero-headline">Prof. Dr. Aissa Halidou</h1>
+            <p class="hero-subheadline" data-fr="Health, Policy &amp; Consulting – International Expertise"
+                data-de="Gesundheit, Politik &amp; Beratung – Internationale Expertise"
+                data-en="Health, Policy &amp; Consulting – International Expertise">Health, Policy &amp; Consulting –
+                International Expertise</p>
+            <a href="#contact" class="btn-primary hero-cta" data-fr="Contact" data-de="Kontakt"
+                data-en="Contact">Contact</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-label" data-fr="À propos" data-de="Über mich" data-en="About">À propos</div>
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-decorative-shape"></div>
+                    <img src="images/africa-bg.png" alt="Africa network illustration" class="about-map" />
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title" data-fr="Prof. Dr. Aissa Halidou" data-de="Prof. Dr. Aissa Halidou"
+                        data-en="Prof. Dr. Aissa Halidou">Prof. Dr. Aissa Halidou</h2>
+                    <!-- French text -->
+                    <div class="lang-content lang-fr active">
+                        <p>Prof. Dr. Aissa Halidou est experte internationale en politique, diplomatie, décolonisation
+                            et santé publique.</p>
+                        <p>Elle accompagne les gouvernements, institutions internationales et organisations dans la
+                            conception, l'analyse et la mise en œuvre de politiques publiques, de stratégies
+                            diplomatiques et de programmes de développement durable.</p>
+                    </div>
+                    <!-- German text -->
+                    <div class="lang-content lang-de">
+                        <p>Prof. Dr. Aissa Halidou ist internationale Expertin für Politik, Diplomatie, Dekolonisierung
+                            und öffentliche Gesundheit.</p>
+                        <p>Sie begleitet Regierungen, internationale Institutionen und Organisationen bei der
+                            Gestaltung, Analyse und Umsetzung öffentlicher Politiken, diplomatischer Strategien und
+                            nachhaltiger Entwicklungsprogramme.</p>
+                    </div>
+                    <!-- English text -->
+                    <div class="lang-content lang-en">
+                        <p>Prof. Dr. Aissa Halidou is an international expert in politics, diplomacy, decolonization and
+                            public health.</p>
+                        <p>She supports governments, international institutions and organizations in the design,
+                            analysis and implementation of public policies, diplomatic strategies and sustainable
+                            development programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERTISE SECTION ===================== -->
+    <section id="expertise" class="section expertise">
+        <div class="container">
+            <div class="section-label" data-fr="Domaines d'expertise" data-de="Fachgebiete"
+                data-en="Areas of Expertise">Domaines d'expertise</div>
+            <div class="expertise-grid">
+                <!-- Card 1: Politics & Decolonization -->
+                <div class="expertise-card" data-animate>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2" />
+                            <path d="M32 4C32 4 20 20 20 32C20 44 32 60 32 60" stroke="currentColor"
+                                stroke-width="1.5" />
+                            <path d="M32 4C32 4 44 20 44 32C44 44 32 60 32 60" stroke="currentColor"
+                                stroke-width="1.5" />
+                            <line x1="4" y1="24" x2="60" y2="24" stroke="currentColor" stroke-width="1.5" />
+                            <line x1="4" y1="40" x2="60" y2="40" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title" data-fr="Politique &amp; Décolonisation"
+                        data-de="Politik &amp; Dekolonisierung" data-en="Politics &amp; Decolonization">Politique &amp;
+                        Décolonisation</h3>
+                    <ul class="card-list">
+                        <li data-fr="Gouvernance, réformes institutionnelles et économiques"
+                            data-de="Governance, institutionelle und wirtschaftliche Reformen"
+                            data-en="Governance, institutional and economic reforms">Gouvernance, réformes
+                            institutionnelles et économiques</li>
+                        <li data-fr="Décolonisation et promotion culturelle"
+                            data-de="Dekolonisierung und kulturelle Förderung"
+                            data-en="Decolonization and cultural promotion">Décolonisation et promotion culturelle</li>
+                        <li data-fr="Communication, gestion et évaluation des politiques publiques"
+                            data-de="Kommunikation, Management und Evaluierung öffentlicher Politiken"
+                            data-en="Communication, management and evaluation of public policies">Communication, gestion
+                            et évaluation des politiques publiques</li>
+                    </ul>
+                </div>
+                <!-- Card 2: Diplomacy & Public Health -->
+                <div class="expertise-card" data-animate>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="20" width="48" height="32" rx="3" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 28H56" stroke="currentColor" stroke-width="1.5" />
+                            <circle cx="32" cy="40" r="6" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M24 20V14C24 11.7909 25.7909 10 28 10H36C38.2091 10 40 11.7909 40 14V20"
+                                stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title" data-fr="Diplomatie &amp; Santé publique"
+                        data-de="Diplomatie &amp; Öffentliche Gesundheit" data-en="Diplomacy &amp; Public Health">
+                        Diplomatie &amp; Santé publique</h3>
+                    <ul class="card-list">
+                        <li data-fr="Stratégies diplomatiques, protocole et négociation"
+                            data-de="Diplomatische Strategien, Protokoll und Verhandlung"
+                            data-en="Diplomatic strategies, protocol and negotiation">Stratégies diplomatiques,
+                            protocole et négociation</li>
+                        <li data-fr="Relations internationales (ONU, Union Africaine, Union Européenne)"
+                            data-de="Internationale Beziehungen (UN, Afrikanische Union, Europäische Union)"
+                            data-en="International relations (UN, African Union, European Union)">Relations
+                            internationales (ONU, Union Africaine, Union Européenne)</li>
+                        <li data-fr="Politique de santé, systèmes d'assurance, digitalisation et approvisionnement pharmaceutique"
+                            data-de="Gesundheitspolitik, Versicherungssysteme, Digitalisierung und pharmazeutische Versorgung"
+                            data-en="Health policy, insurance systems, digitalization and pharmaceutical supply">
+                            Politique de santé, systèmes d'assurance, digitalisation et approvisionnement pharmaceutique
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-label" data-fr="Services &amp; Consulting" data-de="Leistungen &amp; Beratung"
+                data-en="Services &amp; Consulting">Services &amp; Consulting</div>
+            <h2 class="section-title centered" data-fr="Solutions sur mesure" data-de="Maßgeschneiderte Lösungen"
+                data-en="Tailored Solutions">Solutions sur mesure</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-item" data-animate>
+                    <div class="service-number">01</div>
+                    <div class="service-content">
+                        <h3 data-fr="Relations publiques et analyse des stratégies de décolonisation"
+                            data-de="Öffentlichkeitsarbeit und Analyse von Dekolonisierungsstrategien"
+                            data-en="Public relations and analysis of decolonization strategies">Relations publiques et
+                            analyse des stratégies de décolonisation</h3>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-item" data-animate>
+                    <div class="service-number">02</div>
+                    <div class="service-content">
+                        <h3 data-fr="Promotion des échanges économiques et investissements durables"
+                            data-de="Förderung wirtschaftlichen Austauschs und nachhaltiger Investitionen"
+                            data-en="Promotion of economic exchange and sustainable investments">Promotion des échanges
+                            économiques et investissements durables</h3>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-item" data-animate>
+                    <div class="service-number">03</div>
+                    <div class="service-content">
+                        <h3 data-fr="Gestion de crises et résolution de conflits diplomatiques et sociaux"
+                            data-de="Krisenmanagement und Lösung diplomatischer und sozialer Konflikte"
+                            data-en="Crisis management and resolution of diplomatic and social conflicts">Gestion de
+                            crises et résolution de conflits diplomatiques et sociaux</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-label" data-fr="Contact" data-de="Kontakt" data-en="Contact">Contact</div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title" data-fr="Prenons contact" data-de="Kontakt aufnehmen"
+                        data-en="Get in Touch">Prenons contact</h2>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                <circle cx="12" cy="9" r="2.5" />
+                            </svg>
+                            <div>
+                                <strong>Prof. Dr. Aissa Halidou</strong><br />
+                                Horner Brückenweg 1<br />
+                                D-22111 Hamburg<br />
+                                Germany
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                            </svg>
+                            <div>
+                                <a href="tel:+491748261944">+49 174 8261944</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M22 4L12 13 2 4" />
+                            </svg>
+                            <div>
+                                <a href="mailto:h.aissa@web.de">h.aissa@web.de</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="form-name" data-fr="Nom" data-de="Name" data-en="Name">Nom</label>
+                            <input type="text" id="form-name" name="name" required autocomplete="name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email" data-fr="Email" data-de="E-Mail" data-en="Email">Email</label>
+                            <input type="email" id="form-email" name="email" required autocomplete="email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message" data-fr="Message" data-de="Nachricht"
+                                data-en="Message">Message</label>
+                            <textarea id="form-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" data-fr="Envoyer le message"
+                            data-de="Nachricht senden" data-en="Send message">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="images/logo.png" alt="Dr. Aissa Logo" class="footer-logo" />
+                <p class="footer-tagline">Dr. Aissa – Santé · Diplomatie · Politique</p>
+                <p class="footer-copy">&copy; Dr. Aissa – International Consulting</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
