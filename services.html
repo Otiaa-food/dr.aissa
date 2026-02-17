@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services – Prof. Dr. Aissa Halidou</title>
+    <title>Services – Dr. Aissa</title>
+    <meta name="description" content="Services et Consulting de Prof. Dr. Aissa Halidou – Consulting International." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,53 +20,116 @@
             <a href="index.html" class="nav-logo">
                 <img src="images/logo.png" alt="Dr. Aissa Logo" />
             </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="expertise.html">Expertise</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À Propos</a>
+                <a href="expertise.html">Expertise</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
             <div class="nav-right">
                 <div class="lang-switch">
-                    <button class="lang-btn active" data-lang="fr">FR</button>
-                    <button class="lang-btn" data-lang="de">DE</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn active" data-lang="fr">
+                        <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-icon" />
+                        <span>FR</span>
+                    </button>
+                    <button class="lang-btn" data-lang="de">
+                        <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag-icon" />
+                        <span>DE</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag-icon" />
+                        <span>EN</span>
+                    </button>
                 </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </nav>
 
     <header class="page-header">
         <div class="container">
-            <div class="section-label">Consulting</div>
-            <h1 class="section-title">Professional Services</h1>
+            <div class="section-label" data-fr="Services &amp; Consulting" data-de="Leistungen &amp; Beratung"
+                data-en="Services &amp; Consulting">Services &amp; Consulting</div>
+            <h1 class="section-title" data-fr="Solutions sur mesure" data-de="Maßgeschneiderte Lösungen"
+                data-en="Tailored Solutions">Solutions sur mesure</h1>
         </div>
     </header>
 
-    <section class="section institution-services">
+    <section class="section services-section">
         <div class="container">
-            <div class="service-strip">
+
+            <!-- Service 1 -->
+            <div class="service-strip" data-animate>
+                <div class="service-number">01</div>
                 <div class="service-content">
-                    <h2 class="section-title">Relations Publiques & Stratégie</h2>
-                    <p class="academic-p">Relations publiques et analyse des stratégies de décolonisation.
-                        Accompagnement dans la communication institutionnelle complexe.</p>
+                    <h3 data-fr="Relations publiques et analyse des stratégies de décolonisation"
+                        data-de="Öffentlichkeitsarbeit und Analyse von Dekolonisierungsstrategien"
+                        data-en="Public relations and analysis of decolonization strategies">Relations publiques et
+                        analyse des stratégies de décolonisation</h3>
+                    <div class="lang-content lang-fr active">
+                        <p>Identification et proposition de programmes et projets sociaux. Suivi et évaluation des
+                            politiques publiques. Assistance en relations publiques et programmes électorales.</p>
+                    </div>
+                    <div class="lang-content lang-de">
+                        <p>Identifikation und Vorschlag von Sozialprogrammen und -projekten. Monitoring und Evaluierung
+                            öffentlicher Politiken. Unterstützung bei Öffentlichkeitsarbeit und Wahlprogrammen.</p>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <p>Identification and proposal of social programs and projects. Monitoring and evaluation of
+                            public policies. Assistance in public relations and electoral programs.</p>
+                    </div>
                 </div>
             </div>
-            <div class="service-strip">
+
+            <!-- Service 2 -->
+            <div class="service-strip" data-animate>
+                <div class="service-number">02</div>
                 <div class="service-content">
-                    <h2 class="section-title">Investissement Durable</h2>
-                    <p class="academic-p">Promotion des échanges économiques et des investissements durables entre les
-                        institutions internationales et les acteurs locaux.</p>
+                    <h3 data-fr="Promotion des échanges économiques et des investissements durables"
+                        data-de="Förderung des wirtschaftlichen Austauschs und nachhaltiger Investitionen"
+                        data-en="Promotion of economic exchange and sustainable investments">Promotion des échanges
+                        économiques et des investissements durables</h3>
+                    <div class="lang-content lang-fr active">
+                        <p>Protocole, communication et négociation des contrats. Mise en contact avec des fournisseurs.
+                            Vente d'assurances et accompagnement économique.</p>
+                    </div>
+                    <div class="lang-content lang-de">
+                        <p>Protokoll, Kommunikation und Vertragsverhandlungen. Vermittlung von Lieferanten.
+                            Versicherungsvertrieb und wirtschaftliche Begleitung.</p>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <p>Protocol, communication and contract negotiation. Connecting with suppliers. Insurance sales
+                            and economic support.</p>
+                    </div>
                 </div>
             </div>
-            <div class="service-strip">
+
+            <!-- Service 3 -->
+            <div class="service-strip" data-animate>
+                <div class="service-number">03</div>
                 <div class="service-content">
-                    <h2 class="section-title">Crises & Résolution</h2>
-                    <p class="academic-p">Gestion de crises et résolution des conflits diplomatiques et sociaux. Analyse
-                        de risques et médiation internationale.</p>
+                    <h3 data-fr="Gestion de crises et résolution des conflits diplomatiques et sociaux"
+                        data-de="Krisenmanagement und Lösung diplomatischer und sozialer Konflikte"
+                        data-en="Crisis management and resolution of diplomatic and social conflicts">Gestion de crises
+                        et résolution des conflits diplomatiques et sociaux</h3>
+                    <div class="lang-content lang-fr active">
+                        <p>Élaboration des projets et programmes sanitaires. Mise en contact avec des fournisseurs
+                            internationaux. Résolution des conflits diplomatiques et sociaux.</p>
+                    </div>
+                    <div class="lang-content lang-de">
+                        <p>Erstellung von Gesundheitsprojekten und -programmen. Vermittlung internationaler Lieferanten.
+                            Lösung diplomatischer und sozialer Konflikte.</p>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <p>Development of health projects and programs. Connecting with international suppliers.
+                            Resolution of diplomatic and social conflicts.</p>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -78,7 +142,7 @@
                 </div>
                 <div class="footer-nav">
                     <ul class="footer-links">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">À Propos</a></li>
                         <li><a href="expertise.html">Expertise</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
