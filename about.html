@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>À Propos – Dr. Aissa</title>
-    <meta name="description" content="Prof. Dr. Aissa Halidou – Biographie et parcours professionnel." />
+    <title>CV – Dr. Aissa</title>
+    <meta name="description" content="Curriculum Vitae de Prof. Dr. Aissa Halidou." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,49 +51,30 @@
 
     <header class="page-header">
         <div class="container">
-            <div class="section-label" data-fr="Biographie" data-de="Biographie" data-en="Biography">Biographie</div>
+            <div class="section-label" data-fr="Curriculum Vitae" data-de="Lebenslauf" data-en="Curriculum Vitae">
+                Curriculum Vitae</div>
             <h1 class="section-title" data-fr="Prof. Dr. Aissa Halidou" data-de="Prof. Dr. Aissa Halidou"
                 data-en="Prof. Dr. Aissa Halidou">Prof. Dr. Aissa Halidou</h1>
         </div>
     </header>
 
-    <section class="section about-content">
+    <!-- ===================== CV PDF EMBED ===================== -->
+    <section class="section cv-pdf-section">
         <div class="container">
-            <div class="academic-grid" data-animate>
-                <div class="academic-text">
-                    <div class="lang-content lang-fr active">
-                        <p class="lead">Prof. Dr. Aissa Halidou est experte internationale en politique, diplomatie,
-                            décolonisation et santé publique.</p>
-                        <p>Elle accompagne les gouvernements, institutions internationales et organisations dans la
-                            conception, l'analyse et la mise en œuvre de politiques publiques, de stratégies
-                            diplomatiques et de programmes de développement durable.</p>
-                        <p>Basée à Hambourg (Allemagne), elle opère à la croisée de l'Europe et de l'Afrique, offrant
-                            une perspective unique sur les enjeux contemporains de la gouvernance, de la décolonisation
-                            et de la santé mondiale.</p>
-                    </div>
-                    <div class="lang-content lang-de">
-                        <p class="lead">Prof. Dr. Aissa Halidou ist internationale Expertin für Politik, Diplomatie,
-                            Dekolonisierung und öffentliche Gesundheit.</p>
-                        <p>Sie begleitet Regierungen, internationale Institutionen und Organisationen bei der
-                            Gestaltung, Analyse und Umsetzung öffentlicher Politiken, diplomatischer Strategien und
-                            nachhaltiger Entwicklungsprogramme.</p>
-                        <p>Mit Sitz in Hamburg (Deutschland) arbeitet sie an der Schnittstelle zwischen Europa und
-                            Afrika und bietet eine einzigartige Perspektive auf die gegenwärtigen Herausforderungen in
-                            den Bereichen Governance, Dekolonisierung und globale Gesundheit.</p>
-                    </div>
-                    <div class="lang-content lang-en">
-                        <p class="lead">Prof. Dr. Aissa Halidou is an international expert in politics, diplomacy,
-                            decolonization and public health.</p>
-                        <p>She supports governments, international institutions and organizations in the design,
-                            analysis and implementation of public policies, diplomatic strategies and sustainable
-                            development programs.</p>
-                        <p>Based in Hamburg (Germany), she operates at the crossroads of Europe and Africa, offering a
-                            unique perspective on contemporary challenges in governance, decolonization and global
-                            health.</p>
-                    </div>
-                </div>
-                <div class="academic-visual">
-                    <img src="images/logo.png" alt="Dr. Aissa" class="institutional-logo-large" />
+            <div class="cv-pdf-wrapper" data-animate>
+                <iframe src="documents/cv-dr-aissa.pdf" class="cv-pdf-embed" title="CV Prof. Dr. Aissa Halidou"
+                    loading="lazy">
+                </iframe>
+                <div class="cv-pdf-fallback">
+                    <p data-fr="Le PDF ne peut pas être affiché dans votre navigateur."
+                        data-de="Das PDF kann in Ihrem Browser nicht angezeigt werden."
+                        data-en="The PDF cannot be displayed in your browser.">
+                        Le PDF ne peut pas être affiché dans votre navigateur.
+                    </p>
+                    <a href="documents/cv-dr-aissa.pdf" class="btn-primary" download data-fr="Télécharger le CV"
+                        data-de="Lebenslauf herunterladen" data-en="Download CV">
+                        Télécharger le CV
+                    </a>
                 </div>
             </div>
         </div>
