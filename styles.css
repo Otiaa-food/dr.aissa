@@ -1036,45 +1036,178 @@ ul {
 }
 
 /* ============================================
-   CV PDF EMBED (About Page)
+   CV EMBEDDED CARD (About Page)
    ============================================ */
-.cv-pdf-section {
+.cv-embed-section {
+    background: var(--off-white);
+}
+
+.cv-card {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.1);
     background: var(--white);
 }
 
-.cv-pdf-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    border-radius: 16px;
+/* --- CV Header: Green/Orange diagonal background + name + photo --- */
+.cv-card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 48px 48px 48px;
+    min-height: 220px;
     overflow: hidden;
-    border: 1px solid var(--border-light);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 }
 
-.cv-pdf-embed {
+.cv-card-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--green-deep) 0%, var(--green-primary) 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    z-index: 1;
+}
+
+.cv-card-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--orange-primary) 0%, #d4782e 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 10% 100%);
+    z-index: 0;
+}
+
+.cv-card-name {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.cv-first-name,
+.cv-last-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.05;
+    letter-spacing: 2px;
+}
+
+.cv-first-name {
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+}
+
+.cv-last-name {
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+}
+
+.cv-card-photo {
+    position: relative;
+    z-index: 3;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--white);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.cv-card-photo img {
     width: 100%;
-    height: 85vh;
-    min-height: 600px;
-    border: none;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
-.cv-pdf-fallback {
-    display: none;
-    text-align: center;
-    padding: 60px 32px;
-    background: var(--cream);
+/* --- CV Body: Career highlights --- */
+.cv-card-body {
+    padding: 48px;
 }
 
-.cv-pdf-fallback p {
-    font-size: 1rem;
-    color: var(--text-muted);
-    margin-bottom: 24px;
+.cv-career-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-/* Show fallback when iframe fails (mobile/some browsers) */
-@supports not ((-webkit-overflow-scrolling: touch)) {
-    /* Desktop: keep iframe */
+.cv-career-list li {
+    position: relative;
+    padding-left: 28px;
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.65;
+    color: var(--brown-dark);
+}
+
+.cv-bullet {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--orange-primary);
+    flex-shrink: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .cv-card-header {
+        flex-direction: column;
+        padding: 32px 24px;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .cv-card-header::before {
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    }
+
+    .cv-card-header::after {
+        width: 100%;
+        height: 60%;
+        top: auto;
+        bottom: 0;
+        clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .cv-card-name {
+        margin-bottom: 24px;
+    }
+
+    .cv-first-name,
+    .cv-last-name {
+        font-size: 2.4rem;
+    }
+
+    .cv-card-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cv-card-body {
+        padding: 32px 24px;
+    }
+
+    .cv-career-list li {
+        font-size: 0.95rem;
+    }
 }
 
 /* ============================================
@@ -1410,11 +1543,6 @@ ul {
 
     .contact-form-wrap {
         padding: 32px 24px;
-    }
-
-    .cv-pdf-embed {
-        height: 60vh;
-        min-height: 400px;
     }
 
     .expertise-hero-image,
