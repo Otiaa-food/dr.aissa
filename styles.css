@@ -520,6 +520,7 @@ ul {
     text-transform: uppercase;
     color: var(--orange-primary);
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .section-title {
@@ -529,6 +530,7 @@ ul {
     color: var(--green-deep);
     line-height: 1.2;
     margin-bottom: 32px;
+    text-align: center;
 }
 
 .section-title.centered {
@@ -539,7 +541,7 @@ ul {
    CV / ABOUT SECTION (Homepage)
    ============================================ */
 .cv-section {
-    background: var(--white);
+    background: linear-gradient(165deg, var(--off-white) 0%, var(--cream) 50%, var(--green-pale) 100%);
 }
 
 .cv-grid {
@@ -617,7 +619,7 @@ ul {
    ABOUT PAGE
    ============================================ */
 .about-content {
-    background: var(--white);
+    background: linear-gradient(165deg, var(--cream) 0%, var(--off-white) 100%);
 }
 
 .academic-grid {
@@ -656,7 +658,7 @@ ul {
    EXPERTISE CARDS
    ============================================ */
 .expertise-section {
-    background: var(--off-white);
+    background: linear-gradient(165deg, var(--off-white) 0%, var(--cream) 50%, var(--green-pale) 100%);
 }
 
 .institutional-grid {
@@ -823,7 +825,7 @@ ul {
    CONTACT SECTION
    ============================================ */
 .contact-section {
-    background: var(--white);
+    background: linear-gradient(165deg, var(--cream) 0%, var(--off-white) 50%, var(--brown-pale) 100%);
 }
 
 .contact-layout {
@@ -1039,7 +1041,7 @@ ul {
    CV EMBEDDED CARD (About Page)
    ============================================ */
 .cv-embed-section {
-    background: var(--off-white);
+    background: linear-gradient(165deg, var(--cream) 0%, var(--off-white) 50%, var(--green-pale) 100%);
 }
 
 .cv-card {
