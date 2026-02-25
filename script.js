@@ -130,6 +130,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    // ─── Expertise Accordion ─────────────────────────
+    const accordionHeaders = document.querySelectorAll('.cv-accordion-header');
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.closest('.cv-accordion-item');
+            const isOpen = item.classList.contains('open');
+
+            // Close all items (accordion principle)
+            document.querySelectorAll('.cv-accordion-item.open').forEach(openItem => {
+                openItem.classList.remove('open');
+            });
+
+            // Open clicked item if it wasn't already open
+            if (!isOpen) {
+                item.classList.add('open');
+            }
+        });
+    });
+
+
     // ─── Contact Form Handler ────────────────────────
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
