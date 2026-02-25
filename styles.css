@@ -350,7 +350,7 @@ ul {
 }
 
 .hero-logo {
-    max-width: 220px;
+    max-width: 275px;
     margin: 0 auto;
     filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.08));
     animation: fadeInScale 1.2s var(--ease-bounce) forwards;
@@ -375,7 +375,7 @@ ul {
     font-weight: 500;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--brown-primary);
+    color: var(--orange-primary);
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeUp 0.8s var(--ease-smooth) 0.4s forwards;
@@ -613,6 +613,65 @@ ul {
     font-size: 0.875rem;
     color: var(--text-muted);
     margin-bottom: 0;
+}
+
+/* --- Accordion for expertise highlights --- */
+.cv-accordion-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    transition: color 0.3s var(--ease-smooth);
+}
+
+.cv-accordion-header:hover {
+    color: var(--orange-primary);
+}
+
+.cv-accordion-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    position: relative;
+    margin-left: 12px;
+}
+
+.cv-accordion-icon::before,
+.cv-accordion-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 1px;
+    transition: transform 0.35s var(--ease-smooth);
+}
+
+.cv-accordion-icon::before {
+    transform: translate(-50%, -50%);
+}
+
+.cv-accordion-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.cv-accordion-item.open .cv-accordion-icon::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.cv-accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease-smooth), padding 0.4s var(--ease-smooth);
+    padding-top: 0;
+}
+
+.cv-accordion-item.open .cv-accordion-body {
+    max-height: 200px;
+    padding-top: 10px;
 }
 
 /* ============================================
