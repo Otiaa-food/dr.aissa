@@ -15,7 +15,384 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
+<body><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services – Dr. Aissa</title>
+    <meta name="description"
+        content="Dr. Aissa – Services stratégiques en politique, diplomatie, décolonisation et santé publique." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
 <body>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Dr. Aissa Logo" />
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-fr="Accueil" data-de="Startseite" data-en="Home">Accueil</a>
+                <a href="about.html" data-fr="À Propos" data-de="Über uns" data-en="About">À Propos</a>
+                <a href="expertise.html" data-fr="Expertise" data-de="Expertise" data-en="Expertise">Expertise</a>
+                <a href="services.html" class="active" data-fr="Services" data-de="Leistungen"
+                    data-en="Services">Services</a>
+                <a href="dr-aissa-halidou.html" data-fr="Directrice Générale" data-de="Geschäftsführerin"
+                    data-en="Managing Director">Directrice Générale</a>
+                <a href="contact.html" data-fr="Contact" data-de="Kontakt" data-en="Contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="fr">
+                        <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-icon" />
+                        <span>FR</span>
+                    </button>
+                    <button class="lang-btn" data-lang="de">
+                        <img src="https://flagcdn.com/w40/de.png" alt="DE" class="flag-icon" />
+                        <span>DE</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag-icon" />
+                        <span>EN</span>
+                    </button>
+                </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="section-label" data-fr="Services" data-de="Leistungen &amp; Beratung"
+                data-en="Services &amp; Consulting">Services</div>
+            <h1 class="section-title" data-fr="Solutions sur mesure pour un impact durable"
+                data-de="Maßgeschneiderte Lösungen für nachhaltige Wirkung"
+                data-en="Tailored Solutions for Lasting Impact">Solutions sur mesure pour un impact durable</h1>
+        </div>
+    </header>
+
+    <!-- ===================== HERO IMAGE ===================== -->
+    <section class="services-hero-image">
+        <img src="images/Aissa-conf.png" alt="African business professionals in strategic meeting"
+            class="services-wide-img" />
+        <div class="services-hero-overlay">
+            <div class="container">
+                <div class="lang-content lang-fr active">
+                    <p class="services-hero-quote">« Un accompagnement stratégique, personnalisé et orienté résultats. »
+                    </p>
+                </div>
+                <div class="lang-content lang-de">
+                    <p class="services-hero-quote">« Eine strategische, personalisierte und ergebnisorientierte
+                        Begleitung. »</p>
+                </div>
+                <div class="lang-content lang-en">
+                    <p class="services-hero-quote">"Strategic, personalized and results-oriented support."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES INTRO ===================== -->
+    <section class="section" style="background: linear-gradient(165deg, var(--cream) 0%, var(--green-pale) 100%);">
+        <div class="container">
+            <div class="services-intro-grid" data-animate>
+                <div class="services-intro-text">
+                    <div class="lang-content lang-fr active">
+                        <p class="lead">Des solutions stratégiques conçues pour répondre aux défis complexes à
+                            l'intersection de l'Afrique et de l'Europe.</p>
+                        <p>Notre cabinet offre un accompagnement de haut niveau aux gouvernements, institutions
+                            internationales, entreprises et ONG dans les domaines de la politique, de la diplomatie, de
+                            la décolonisation et de la santé publique. Avec une présence bicontinentale en Allemagne et
+                            au Niger, nous concevons des stratégies adaptées aux réalités locales tout en répondant aux
+                            standards internationaux. Chaque mission est conçue sur mesure, avec un engagement total
+                            envers des résultats concrets et mesurables.</p>
+                    </div>
+                    <div class="lang-content lang-de">
+                        <p class="lead">Strategische Lösungen für komplexe Herausforderungen an der Schnittstelle von
+                            Afrika und Europa.</p>
+                        <p>Unser Beratungsunternehmen bietet hochrangige Begleitung für Regierungen, internationale
+                            Institutionen, Unternehmen und NGOs in den Bereichen Politik, Diplomatie, Dekolonisierung
+                            und öffentliche Gesundheit. Mit einer bikontinentalen Präsenz in Deutschland und Niger
+                            entwickeln wir Strategien, die an lokale Realitäten angepasst sind und gleichzeitig
+                            internationalen Standards entsprechen. Jeder Auftrag ist maßgeschneidert, mit vollem
+                            Engagement für konkrete und messbare Ergebnisse.</p>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <p class="lead">Strategic solutions designed to address complex challenges at the intersection
+                            of Africa and Europe.</p>
+                        <p>Our consultancy provides high-level support to governments, international institutions,
+                            corporations and NGOs in the areas of politics, diplomacy, decolonization and public health.
+                            With a bi-continental presence in Germany and Niger, we design strategies adapted to local
+                            realities while meeting international standards. Each mission is tailor-made, with full
+                            commitment to concrete and measurable results.</p>
+                    </div>
+                </div>
+                <div class="services-intro-image">
+                    <img src="images/africa-bg.png" alt="Africa – Our field of expertise"
+                        style="object-fit: contain; background: linear-gradient(135deg, var(--green-deep), var(--green-primary)); padding: 24px; border-radius: 16px;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES STRIPS ===================== -->
+    <section class="section services-section">
+        <div class="container">
+
+            <!-- Service 1 -->
+            <div class="service-strip-enhanced" data-animate>
+                <div class="service-strip-image">
+                    <img src="images/african-american-manager-examines-company-strategy-with-her-staff.jpg"
+                        alt="African professional public policy" />
+                </div>
+                <div class="service-strip-content">
+                    <div class="service-number">01</div>
+                    <h3 data-fr="Relations publiques et analyse des stratégies de décolonisation"
+                        data-de="Öffentlichkeitsarbeit und Analyse von Dekolonisierungsstrategien"
+                        data-en="Public relations and analysis of decolonization strategies">Relations publiques et
+                        analyse des stratégies de décolonisation</h3>
+                    <div class="lang-content lang-fr active">
+                        <p>Identification et proposition de programmes et projets sociaux. Suivi et évaluation des
+                            politiques publiques. Assistance en relations publiques et programmes électoraux.</p>
+                        <ul class="service-detail-list">
+                            <li>Analyse approfondie des cadres politiques existants</li>
+                            <li>Conception de stratégies de communication institutionnelle</li>
+                            <li>Évaluation d'impact des programmes sociaux et publics</li>
+                            <li>Conseil en gouvernance et transition démocratique</li>
+                        </ul>
+                    </div>
+                    <div class="lang-content lang-de">
+                        <p>Identifikation und Vorschlag von Sozialprogrammen und -projekten. Monitoring und Evaluierung
+                            öffentlicher Politiken. Unterstützung bei Öffentlichkeitsarbeit und Wahlprogrammen.</p>
+                        <ul class="service-detail-list">
+                            <li>Tiefgehende Analyse bestehender politischer Rahmenbedingungen</li>
+                            <li>Entwicklung institutioneller Kommunikationsstrategien</li>
+                            <li>Wirkungsanalyse sozialer und öffentlicher Programme</li>
+                            <li>Beratung in Governance und demokratischem Wandel</li>
+                        </ul>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <p>Identification and proposal of social programs and projects. Monitoring and evaluation of
+                            public policies. Assistance in public relations and electoral programs.</p>
+                        <ul class="service-detail-list">
+                            <li>In-depth analysis of existing political frameworks</li>
+                            <li>Design of institutional communication strategies</li>
+                            <li>Impact assessment of social and public programs</li>
+                            <li>Governance and democratic transition advisory</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-strip-enhanced reverse" data-animate>
+                <div class="service-strip-image">
+                    <img src="images/african-american-woman-with-phone-laptop-cafe.jpg"
+                        alt="African business professionals negotiations" />
+                </div>
+                <div class="service-strip-content">
+                    <div class="service-number">02</div>
+                    <h3 data-fr="Promotion des échanges économiques et des investissements durables"
+                        data-de="Förderung des wirtschaftlichen Austauschs und nachhaltiger Investitionen"
+                        data-en="Promotion of economic exchange and sustainable investments">Promotion des échanges
+                        économiques et des investissements durables</h3>
+                    <div class="lang-content lang-fr active">
+                        <p>Protocole, communication et négociation des contrats. Mise en contact avec des fournisseurs.
+                            Vente d'assurances et accompagnement économique.</p>
+                        <ul class="service-detail-list">
+                            <li>Facilitation de partenariats commerciaux Europe-Afrique</li>
+                            <li>Négociation et rédaction de contrats internationaux</li>
+                            <li>Accompagnement des investisseurs dans les marchés africains</li>
+                            <li>Conseil en assurances et produits financiers</li>
+                        </ul>
+                    </div>
+                    <div class="lang-content lang-de">
+                        <p>Protokoll, Kommunikation und Vertragsverhandlungen. Vermittlung von Lieferanten.
+                            Versicherungsvertrieb und wirtschaftliche Begleitung.</p>
+                        <ul class="service-detail-list">
+                            <li>Erleichterung von Handelspartnerschaften Europa-Afrika</li>
+                            <li>Verhandlung und Erstellung internationaler Verträge</li>
+                            <li>Begleitung von Investoren auf afrikanischen Märkten</li>
+                            <li>Beratung zu Versicherungs- und Finanzprodukten</li>
+                        </ul>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <p>Protocol, communication and contract negotiation. Connecting with suppliers. Insurance sales
+                            and economic support.</p>
+                        <ul class="service-detail-list">
+                            <li>Facilitation of Europe-Africa trade partnerships</li>
+                            <li>Negotiation and drafting of international contracts</li>
+                            <li>Supporting investors in African markets</li>
+                            <li>Insurance and financial products advisory</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-strip-enhanced" data-animate>
+                <div class="service-strip-image">
+                    <img src="images/closeup-shot-female-doctor.jpg" alt="African healthcare professional" />
+                </div>
+                <div class="service-strip-content">
+                    <div class="service-number">03</div>
+                    <h3 data-fr="Gestion de crises et résolution des conflits diplomatiques et sociaux"
+                        data-de="Krisenmanagement und Lösung diplomatischer und sozialer Konflikte"
+                        data-en="Crisis management and resolution of diplomatic and social conflicts">Gestion de crises
+                        et résolution des conflits diplomatiques et sociaux</h3>
+                    <div class="lang-content lang-fr active">
+                        <p>Élaboration des projets et programmes sanitaires. Mise en contact avec des fournisseurs
+                            internationaux. Résolution des conflits diplomatiques et sociaux.</p>
+                        <ul class="service-detail-list">
+                            <li>Médiation et facilitation de dialogues inter-parties</li>
+                            <li>Conception de cadres de résolution de conflits</li>
+                            <li>Élaboration de programmes sanitaires internationaux</li>
+                            <li>Mise en réseau avec des partenaires pharmaceutical mondiaux</li>
+                        </ul>
+                    </div>
+                    <div class="lang-content lang-de">
+                        <p>Erstellung von Gesundheitsprojekten und -programmen. Vermittlung internationaler Lieferanten.
+                            Lösung diplomatischer und sozialer Konflikte.</p>
+                        <ul class="service-detail-list">
+                            <li>Mediation und Erleichterung von Mehrparteiendialogen</li>
+                            <li>Konzeption von Konfliktlösungsrahmen</li>
+                            <li>Entwicklung internationaler Gesundheitsprogramme</li>
+                            <li>Vernetzung mit globalen pharmazeutischen Partnern</li>
+                        </ul>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <p>Development of health projects and programs. Connecting with international suppliers.
+                            Resolution of diplomatic and social conflicts.</p>
+                        <ul class="service-detail-list">
+                            <li>Mediation and facilitation of multi-party dialogues</li>
+                            <li>Design of conflict resolution frameworks</li>
+                            <li>Development of international health programs</li>
+                            <li>Networking with global pharmaceutical partners</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 (NEW) -->
+            <div class="service-strip-enhanced reverse" data-animate>
+                <div class="service-strip-image">
+                    <img src="images/christina-wocintechchat-com-m-rg1y72eKw6o-unsplash.jpg"
+                        alt="African professional coaching" />
+                </div>
+                <div class="service-strip-content">
+                    <div class="service-number">04</div>
+                    <h3 data-fr="Formation, coaching et accompagnement stratégique"
+                        data-de="Schulung, Coaching und strategische Begleitung"
+                        data-en="Training, coaching and strategic support">Formation, coaching et accompagnement
+                        stratégique</h3>
+                    <div class="lang-content lang-fr active">
+                        <p>Programmes de formation sur mesure pour les cadres et décideurs. Séminaires en leadership
+                            interculturel et communication diplomatique.</p>
+                        <ul class="service-detail-list">
+                            <li>Ateliers de leadership pour décideurs africains et européens</li>
+                            <li>Formation en protocole diplomatique et interculturel</li>
+                            <li>Coaching individuel pour cadres dirigeants</li>
+                            <li>Séminaires sur la décolonisation et la souveraineté</li>
+                        </ul>
+                    </div>
+                    <div class="lang-content lang-de">
+                        <p>Maßgeschneiderte Schulungsprogramme für Führungskräfte und Entscheidungsträger. Seminare in
+                            interkultureller Führung und diplomatischer Kommunikation.</p>
+                        <ul class="service-detail-list">
+                            <li>Leadership-Workshops für afrikanische und europäische Entscheidungsträger</li>
+                            <li>Schulung in diplomatischem und interkulturellem Protokoll</li>
+                            <li>Individuelles Coaching für Führungskräfte</li>
+                            <li>Seminare zu Dekolonisierung und Souveränität</li>
+                        </ul>
+                    </div>
+                    <div class="lang-content lang-en">
+                        <p>Tailored training programs for executives and decision-makers. Seminars in intercultural
+                            leadership and diplomatic communication.</p>
+                        <ul class="service-detail-list">
+                            <li>Leadership workshops for African and European decision-makers</li>
+                            <li>Training in diplomatic and intercultural protocol</li>
+                            <li>Individual coaching for senior executives</li>
+                            <li>Seminars on decolonization and sovereignty</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section services-cta">
+        <div class="container" style="text-align: center;">
+            <div class="lang-content lang-fr active">
+                <h2 class="section-title" style="color: var(--white);">Prêt à transformer vos défis en opportunités ?
+                </h2>
+                <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 32px; font-size: 1.05rem;">
+                    Contactez-nous pour une consultation personnalisée et découvrez comment notre expertise peut servir
+                    vos objectifs.</p>
+            </div>
+            <div class="lang-content lang-de">
+                <h2 class="section-title" style="color: var(--white);">Bereit, Ihre Herausforderungen in Chancen zu
+                    verwandeln?</h2>
+                <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 32px; font-size: 1.05rem;">
+                    Kontaktieren Sie uns für eine persönliche Beratung und erfahren Sie, wie unsere Expertise Ihren
+                    Zielen dienen kann.</p>
+            </div>
+            <div class="lang-content lang-en">
+                <h2 class="section-title" style="color: var(--white);">Ready to turn your challenges into opportunities?
+                </h2>
+                <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 32px; font-size: 1.05rem;">
+                    Contact us for a personalized consultation and discover how our expertise can serve your objectives.
+                </p>
+            </div>
+            <a href="contact.html" class="btn-primary"
+                style="background: var(--white); color: var(--green-deep); border-color: var(--white);"
+                data-fr="Demander une Consultation" data-de="Beratung anfragen" data-en="Request Consultation">Demander
+                une Consultation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Dr. Aissa Logo" class="footer-logo" />
+                    <p class="footer-tagline">Dr. Aissa – Santé · Diplomatie · Politique · Décolonisation</p>
+                </div>
+                <div class="footer-nav">
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-fr="À Propos" data-de="Über uns" data-en="About">À Propos</a></li>
+                        <li><a href="expertise.html" data-fr="Expertise" data-de="Expertise"
+                                data-en="Expertise">Expertise</a></li>
+                        <li><a href="services.html" data-fr="Services" data-de="Leistungen"
+                                data-en="Services">Services</a></li>
+                        <li><a href="dr-aissa-halidou.html" data-fr="Directrice Générale" data-de="Geschäftsführerin"
+                                data-en="Managing Director">Directrice Générale</a></li>
+                        <li><a href="contact.html" data-fr="Contact" data-de="Kontakt" data-en="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; Dr. Aissa</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
     <nav class="navbar">
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">
