@@ -158,9 +158,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const wrap = contactForm.closest('.contact-form-wrap');
             if (wrap) {
                 const messages = {
-                    fr: { title: 'Message envoyé', text: 'Merci pour votre demande. Prof. Dr. Aissa Halidou vous répondra dans les plus brefs délais.' },
-                    de: { title: 'Nachricht gesendet', text: 'Vielen Dank für Ihre Anfrage. Prof. Dr. Aissa Halidou wird sich in Kürze bei Ihnen melden.' },
-                    en: { title: 'Message Sent', text: 'Thank you for your inquiry. Prof. Dr. Aissa Halidou will respond to your request shortly.' }
+                    fr: { title: 'Message envoyé', text: 'Merci pour votre demande. Prof. Aissa Halidou vous répondra dans les plus brefs délais.' },
+                    de: { title: 'Nachricht gesendet', text: 'Vielen Dank für Ihre Anfrage. Prof. Dr. Aissa wird sich in Kürze bei Ihnen melden.' },
+                    en: { title: 'Message Sent', text: 'Thank you for your inquiry. Prof. Aissa Halidou will respond to your request shortly.' }
                 };
                 const msg = messages[currentLang] || messages.fr;
                 wrap.innerHTML = `
