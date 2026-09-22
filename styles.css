@@ -1358,6 +1358,10 @@ ul {
     color: var(--text-dark);
 }
 
+.services-intro-grid--stretch .services-intro-text p {
+    font-size: 1.15rem;
+}
+
 .services-intro-image {
     border-radius: 16px;
     overflow: hidden;
